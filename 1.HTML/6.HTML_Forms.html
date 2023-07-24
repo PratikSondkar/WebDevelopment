@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Forms Tutorial</h2>
+    <form action="backend.php">  <!--This is where the form data will arrive when submitted-->
+        <label for="name">Name: </label> <!---Label is used so that if I click on Name in form it automatically
+                                              selects the name field. The id and for should be same for that-->
+        <div> 
+            <input type="text" name="myname" id="name">
+        </div>
+        <label for="email">Email:</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+        </div><!--Email input field with validation for email format-->
+        <div>
+            Password: <input type="password" name="mypassword">
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        <div>
+            Date:<input type="date" value="mydate">
+        </div>
+        <div>
+            Eligible: <input type="checkbox" value="myeligibility">
+        </div>
+        <div>
+            Gender: Male <input type="radio" name="gender">Female <input type="radio" name="gender"><br><br>
+        </div>
+
+        <div> <!---Select option in form-->
+            <label for="myselect">Country:</label>
+            <select name="myselect" id="myselect">
+                <option value="India" selected>India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
