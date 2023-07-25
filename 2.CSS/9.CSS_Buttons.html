@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and Designing</title>
+    <style>
+        .container{
+            border: 3px solid blue;
+            background-color: antiquewhite;
+            width: 700px;
+            margin: 33px auto;
+            padding: 34px;
+        }
+        .btn{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: aquamarine;
+            padding: 5px;
+            margin: 5px auto;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /* Pseudo Selectors */
+        /* Hover shows when the cursor hovers over link or button. */
+        a:hover{
+            color: rgb(5,0,0);
+            background-color: rgb(221, 166, 38);
+        }
+        /* Visited is when the link is already visited. */
+        a:visited{
+            color: yellow;
+        }
+        /* Active is when the link is clicked. */
+        a:active{
+            color: rgb(0, 0, 0);
+            background-color: red;
+        }
+        .btn:hover{
+            color: rgb(5,0,0);
+            background-color: rgb(221, 166, 38);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a demonstration</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident recusandae quos cupiditate repudiandae delectus fuga. Explicabo laboriosam quod quasi atque aut. Exercitationem perferendis ratione voluptatum voluptates in, ipsa ad minima enim libero nulla, rerum atque quibusdam laboriosam? Dolor, consectetur nesciunt repellendus ipsa quia temporibus voluptatum laborum similique eius earum.</p>
+        <a href="https://google.com" class="btn" target="_blank">More on google</a>
+        <button class="btn">Click me</button>
+    </div>
+</body>
+</html>
